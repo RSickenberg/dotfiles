@@ -1,0 +1,9 @@
+{ 
+"path": "cz-conventional-changelog",
+"rules": {
+	"scope-case": "sentence-case",
+	"header-case": "sentence-case",
+	"body-case": "sentence-case",
+	"subject-case": "sentence-case"
+}
+}

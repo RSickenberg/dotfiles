@@ -1,0 +1,35 @@
+alias gd='git diff'
+alias ga='git add .'
+alias gc='git commit'
+alias gf='git fetch'
+alias gr='git rebase'
+alias gst='git status'
+alias gp='git push'
+alias gco='git checkout'
+alias me='cd ~'
+alias bye='vagrant halt'
+alias nas='ssh romain@haux49.synology.me -p 2200'
+alias gsu='git submodule update --init --recursive'
+alias gsur='gsu --remote'
+alias gsd='git submodule deinit --all -f'
+alias hey='vagrant up'
+alias vup='vagrant up'
+alias vssh='vagrant ssh'
+alias ssh-add='ssh-add -K'
+alias vdwn='vagrant halt'
+alias dc-up='docker-compose up -d'
+alias dc-down='docker-compose down'
+alias dc-build='docker-compose up --build'
+alias dc-prune='docker system prune'
+alias pstart='~/pontsun/containers && docker-compose up -d'
+alias git-clear='git fetch -p && for branch in $(git branch -vv | grep ": gone]" | awk "{print $1}"); do git branch -D $branch; done'
+alias gccl='git-clear'
+
+alias ~="cd ~"
+alias .="cd .."
+alias ..="cd ../.."
+alias ...="cd ../../.."
+alias ....="cd ../../../.."
+alias cd..="cd .." # Typo addressed.
+
+alias sail="./vendor/bin/sail"

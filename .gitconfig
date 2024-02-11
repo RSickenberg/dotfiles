@@ -1,0 +1,42 @@
+[user]
+	signingkey = A80574CB
+	email = r.sickenberg@gmail.com
+	name = Sickenberg Romain
+[commit]
+	gpgSign = true
+	template = /Users/romainsickenberg/.stCommitMsg
+[pull]
+	rebase = true
+[credential]
+	helper = cache
+[core]
+	excludesfile = /Users/romainsickenberg/.gitignore_global
+	fileMode = false
+	pager = less -+FX
+	sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[tag]
+	forceSignAnnotated = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[maintenance]
+	repo = /Users/romainsickenberg/Projects/haux49/TeslaCompagnonWebsite
+	repo = /Users/romainsickenberg/Projects/as/shop.swisstopo.ch
+	repo = /Users/romainsickenberg/Projects/as/swissarchery
+	repo = /Users/romainsickenberg/Projects/as/colis_du_coeur
+	repo = /Users/romainsickenberg/Projects/as/vernier
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pack]
+	useBitmapBoundaryTraversal = true
+	usebitmaps = true
