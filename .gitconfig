@@ -4,9 +4,10 @@
 	name = Sickenberg Romain
 [commit]
 	gpgSign = true
-	template = /Users/romainsickenberg/.stCommitMsg
 [pull]
 	rebase = true
+[fetch]
+	pruneTags = true
 [credential]
 	helper = cache
 [core]
@@ -14,12 +15,9 @@
 	fileMode = false
 	pager = less -+FX
 	sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	# Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
 [tag]
 	forceSignAnnotated = true
 [filter "lfs"]
@@ -27,12 +25,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[maintenance]
-	repo = /Users/romainsickenberg/Projects/haux49/TeslaCompagnonWebsite
-	repo = /Users/romainsickenberg/Projects/as/shop.swisstopo.ch
-	repo = /Users/romainsickenberg/Projects/as/swissarchery
-	repo = /Users/romainsickenberg/Projects/as/colis_du_coeur
-	repo = /Users/romainsickenberg/Projects/as/vernier
 [init]
 	defaultBranch = main
 [push]
@@ -40,3 +32,6 @@
 [pack]
 	useBitmapBoundaryTraversal = true
 	usebitmaps = true
+[help]
+	# Automatically correct and execute mistyped commands.
+	autocorrect = 1
