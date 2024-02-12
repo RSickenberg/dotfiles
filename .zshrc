@@ -153,3 +153,4 @@ source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 source /Users/romainsickenberg/.config/op/plugins.sh
 export GPG_TTY=$(tty)
+export PATH="/opt/homebrew/sbin:$PATH"
