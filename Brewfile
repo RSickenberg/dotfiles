@@ -1,6 +1,7 @@
 tap "dart-lang/dart"
 tap "getsentry/tools"
 tap "github/gh"
+tap "go-task/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
@@ -12,10 +13,10 @@ tap "sass/sass"
 tap "symfony-cli/tap"
 # Simple, modern, secure file encryption
 brew "age"
-# YAML Parser
-brew "libyaml"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# YAML Parser
+brew "libyaml"
 # Library for command-line editing
 brew "readline", link: true
 # Command-line interface for SQLite
@@ -34,8 +35,6 @@ brew "bash-completion"
 brew "bison"
 # Collection of portable C++ source libraries
 brew "boost"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # Decentralized dependency manager for Cocoa
@@ -48,6 +47,8 @@ brew "cmake"
 brew "cmocka"
 # Defines a standard way of committing rules and communicating it
 brew "commitizen"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Generic library support script
 brew "libtool"
 # Network authentication protocol
@@ -58,10 +59,12 @@ brew "php"
 brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Bash completion for Django
+brew "django-completion"
 # Lightweight DNS forwarder and DHCP server
 brew "dnsmasq"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # GNU database manager
 brew "gdbm"
 # GitHub command-line tool
@@ -82,10 +85,14 @@ brew "gnutls"
 brew "libksba"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
 # Version Control Visualization Tool
 brew "gource"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # GNU Ubiquitous Intelligent Language for Extensions
 brew "guile"
 # Portable abstraction of the hierarchical topology of modern architectures
@@ -112,8 +119,6 @@ brew "ncdu"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Perl compatible regular expressions library
-brew "pcre"
 # Port scanning utility for large networks
 brew "nmap"
 # Development kit for the Java programming language
@@ -122,8 +127,8 @@ brew "openjdk"
 brew "openstackclient"
 # Small collection of programs that operate on patch files
 brew "patchutils"
-# Tool to automatically fix PHP coding standards issues
-brew "php-cs-fixer"
+# Perl compatible regular expressions library
+brew "pcre"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -174,7 +179,11 @@ cask "1password"
 cask "1password-cli"
 # Apple TV Aerial screensaver
 cask "aerial"
-# App to build and share containerized applications and microservices
+# Server and cloud storage browser
+cask "cyberduck"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerised applications and microservices
 cask "docker"
 # Typeface made for developers
 cask "font-jetbrains-mono"
@@ -182,5 +191,7 @@ cask "font-jetbrains-mono"
 cask "ngrok"
 # MySQL/MariaDB database management
 cask "sequel-ace"
+# Video game digital distribution service
+cask "steam"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"

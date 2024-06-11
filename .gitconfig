@@ -10,6 +10,9 @@
 	pruneTags = true
 [credential]
 	helper = cache
+[credential "https://git.lausanne.ch"]
+	username = VDL03855
+	helper = store
 [core]
 	excludesfile = /Users/romainsickenberg/.gitignore_global
 	fileMode = false
@@ -35,3 +38,5 @@
 [help]
 	# Automatically correct and execute mistyped commands.
 	autocorrect = 1
+[receive]
+	advertisePushOptions = true
