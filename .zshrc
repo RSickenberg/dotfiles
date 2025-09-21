@@ -153,3 +153,14 @@ source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 source /Users/romainsickenberg/.config/op/plugins.sh
 export GPG_TTY=$(tty)
+export PATH="/opt/homebrew/sbin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# bun completions
+[ -s "/Users/romainsickenberg/.bun/_bun" ] && source "/Users/romainsickenberg/.bun/_bun"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/romainsickenberg/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
