@@ -16,7 +16,7 @@
 	sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -28,11 +28,28 @@
 	process = git-lfs filter-process
 	required = true
 [maintenance]
+	repo = /Users/romainsickenberg/Projects/haux49/rsickenberg.me
+	repo = /Users/romainsickenberg/Projects/citydeals/api
+	repo = /Users/romainsickenberg/Projects/muum/app_ios
+	repo = /Users/romainsickenberg/.dotfiles
+	repo = /Users/romainsickenberg/Projects/haux49/api.teslacompanion
+	repo = /Users/romainsickenberg/Projects/haux49/archive/easypackages
+	repo = /Users/romainsickenberg/Projects/haux49/ATPL_Formula_Kit
+	repo = /Users/romainsickenberg/Projects/haux49/flywithme
+	repo = /Users/romainsickenberg/Projects/haux49/flywithme_sf
+	repo = /Users/romainsickenberg/Projects/haux49/fortnite_wiki_server
+	repo = /Users/romainsickenberg/Projects/haux49/StatusBuddy
+	repo = /Users/romainsickenberg/Projects/haux49/StrvBike
+	repo = /Users/romainsickenberg/Projects/haux49/TESLA_WATCH/Tesla@Wrist
 	repo = /Users/romainsickenberg/Projects/haux49/TeslaCompagnonWebsite
-	repo = /Users/romainsickenberg/Projects/as/shop.swisstopo.ch
-	repo = /Users/romainsickenberg/Projects/as/swissarchery
-	repo = /Users/romainsickenberg/Projects/as/colis_du_coeur
-	repo = /Users/romainsickenberg/Projects/as/vernier
+	repo = /Users/romainsickenberg/Projects/haux49/TeslaSwift
+	repo = /Users/romainsickenberg/Projects/haux49/wattson
+	repo = /Users/romainsickenberg/Projects/eternalTwin/mush
+	repo = /Users/romainsickenberg/Projects/SIL/atlas
+	repo = /Users/romainsickenberg/Projects/SIL/courses-gaz
+	repo = /Users/romainsickenberg/Projects/SIL/db_postgres
+	repo = /Users/romainsickenberg/Projects/SIL/project_dev_tools
+	repo = /Users/romainsickenberg/Projects/SIL/sil-catalog
 [init]
 	defaultBranch = main
 [push]
