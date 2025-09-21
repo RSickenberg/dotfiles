@@ -1,5 +1,7 @@
 {
     "require": {
         "laravel/installer": "^5.0"
+    },
+    "config": {
     }
 }
