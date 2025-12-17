@@ -4,7 +4,6 @@
 	name = Sickenberg Romain
 [commit]
 	gpgSign = true
-	template = /Users/romainsickenberg/.stCommitMsg
 [pull]
 	rebase = true
 [credential]
@@ -50,6 +49,7 @@
 	repo = /Users/romainsickenberg/Projects/SIL/db_postgres
 	repo = /Users/romainsickenberg/Projects/SIL/project_dev_tools
 	repo = /Users/romainsickenberg/Projects/SIL/sil-catalog
+	repo = /Users/romainsickenberg/Projects/xxlgroup/mydetective
 [init]
 	defaultBranch = main
 [push]
