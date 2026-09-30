@@ -12,7 +12,7 @@
 	excludesfile = /Users/romainsickenberg/.gitignore_global
 	fileMode = false
 	pager = less -+FX
-	sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
+	#sshCommand = ssh -i ~/.ssh/id_ed25519 -F /dev/null
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =

@@ -21,7 +21,7 @@ alias dc-down='docker-compose down'
 alias dc-build='docker-compose up --build'
 alias dc-prune='docker system prune'
 alias pstart='~/pontsun/containers && docker-compose up -d'
-alias git-clear='git fetch -p && for branch in $(git branch -vv | grep ": gone]" | awk "{print $1}"); do git branch -D $branch; done'
+alias gfad='git branch --delete-merged origin'
 alias gccl='git-clear'
 
 alias ~="cd ~"

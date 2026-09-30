@@ -148,6 +148,10 @@ export NVM_DIR="$HOME/.nvm"
 
 fpath=(~/.zsh.d/ $fpath)
 
+if command -v ngrok &>/dev/null; then
+eval "$(ngrok completion)"
+fi
+
 alias python="$(brew --prefix)/bin/python3"
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
